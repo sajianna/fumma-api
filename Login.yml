@@ -1,0 +1,27 @@
+info:
+  name: Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://fummaall.astradevelops.in/api/Login
+  body:
+    type: json
+    data: |-
+      {
+          "member_id": "6193/25",
+          "password":"9383413878",
+          "fcm_token":"",
+          "app_version":"",
+          "model":"",
+          "model_name":"",
+          "model_version":""
+      } 
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,45 @@
+info:
+  name: deceasedListApi
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: https://fummaall.astradevelops.in/api/deceasedListApi
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: "Bearer "
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: deceasedListApi
+    request:
+      url: https://fummaall.astradevelops.in/api/deceasedListApi?page=1&per_page=5
+      method: GET
+      headers:
+        - name: Accept
+          value: application/json
+        - name: Content-Type
+          value: application/json
+        - name: Authorization
+          value: "Bearer "
+      params:
+        - name: page
+          value: "1"
+          type: query
+        - name: per_page
+          value: "5"
+          type: query
+    response:
+      body:
+        type: text
+        data: ""

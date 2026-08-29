@@ -1,0 +1,32 @@
+info:
+  name: Payments/Initiate
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: https://fummaall.astradevelops.in/api/Payments/Initiate
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: "Bearer "
+  body:
+    type: json
+    data: |-
+      {
+        "amount": "30",
+        "email": "annaastra3878@gmail.com",
+        "phone": "9383413878",
+        "name": "astra",
+        "member_id": "1",
+        "product_info": "Membership Payment"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,29 @@
+info:
+  name: OtherProfile
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: https://fummaall.astradevelops.in/api/OtherProfile
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: "Bearer "
+  body:
+    type: json
+    data: |-
+      {
+        "member_id":"1234/25",
+          "amount": "100"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

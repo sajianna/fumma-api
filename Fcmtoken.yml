@@ -1,0 +1,27 @@
+info:
+  name: Fcmtoken
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://fummaall.astradevelops.in/api/Fcmtoken
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "member_id":"6193/25",
+          "fcm_token": ""
+      } 
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
