@@ -1,7 +1,7 @@
 info:
   name: advertisementList
   type: http
-  seq: 9
+  seq: 12
 
 http:
   method: GET
@@ -12,16 +12,18 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: "Bearer "
+      value: Bearer o6bEmbXi3C
+  auth: inherit
 
 settings:
   encodeUrl: true
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
 
 examples:
-  - name: advertisementList
+  - name: advertisementList_pagination
     request:
       url: https://fummaall.astradevelops.in/api/advertisementList?page=1&per_page=5
       method: GET

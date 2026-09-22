@@ -1,7 +1,7 @@
 info:
   name: OtherProfile
   type: http
-  seq: 8
+  seq: 7
 
 http:
   method: POST
@@ -27,3 +27,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,7 +1,7 @@
 info:
   name: updateProfile
   type: http
-  seq: 6
+  seq: 5
 
 http:
   method: PUT
@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: "Bearer "
+      value: Bearer pFSdGEuhz2
   body:
     type: json
     data: |-
@@ -32,3 +32,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
