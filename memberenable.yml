@@ -1,0 +1,27 @@
+info:
+  name: memberenable
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: https://fumma.co.in/api/memberenable
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "mobile":"9383413878"
+      } 
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
